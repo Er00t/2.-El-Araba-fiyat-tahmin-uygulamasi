@@ -3,7 +3,7 @@ Aracın Markasından bağımsız olarak sitelerden çekilen verilerle aracınız
 
 Kodu çalıştırmadan önce indirilmesi gereken kütüphaneler:
 -pip install requests
--pip install bs4
+-pip install bs4 
 -pip install python-csv
 -pip install pandas
 -pip install numpy
