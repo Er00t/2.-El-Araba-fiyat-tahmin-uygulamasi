@@ -16,3 +16,8 @@ Kodu çalıştırmadan önce kodda size veriler CSV doya yollarını girmeniz ge
 
 Size yardımcı olucak yorum satırları eklenmiştir yorum satırlarına göz atın
 Sorunuz olursa bana alperentrnu@gmail.com adresinden her zaman ulaşabilirsiniz.
+
+Console application that informs you about the approximate price of your vehicle from online data, without calculating the brand value of the vehicle.
+
+
+
