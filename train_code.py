@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-veriler=pd.read_csv('C:/Users/theod/OneDrive/Masaüstü/python/31-Projeler/son testler/datalar2.csv')
+veriler=pd.read_csv('*** VERİLERİN BULUNDUĞU CSV DOSYA YOLU ***')
 
 
 yakitlar=veriler.iloc[:,0:1].values
@@ -34,4 +34,4 @@ from sklearn.ensemble import RandomForestRegressor
 rf_reg=RandomForestRegressor(n_estimators=100,random_state=0)
 rf_reg.fit(x_train,y_train)
 
-print(rf_reg.predict([[1,0,0,1,0,2022,15.330]]))
+print(rf_reg.predict([[1,0,0,1,0,0,2022,15.330]]))
