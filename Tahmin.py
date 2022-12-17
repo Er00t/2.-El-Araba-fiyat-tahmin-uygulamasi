@@ -19,7 +19,7 @@ while page2<sayfa3: # güncel sayfa alıyorsanız sayfa3'ü sayfa2 yapınız
     response2=requests.get(f"{url2}"+f"?sayfa={page2}")
     soup2=BeautifulSoup(response2.text,"html.parser")
     ilanlar2=soup2.find_all(class_="Arac-Foto")
-    with open ("C:/Users/theod/OneDrive/Masaüstü/python/31-Projeler/son testler/final.csv","a",newline='',encoding="utf-8")as file:
+    with open ("***BURAYA OLUŞTURULACAK OLAN CSV DOSYA YOLUNU GİRİNİZ KODLA AYNI DİZİNDE OLMALI!***","a",newline='',encoding="utf-8")as file: # örnek "C:/Users/theod/OneDrive/Masaüstü/python/Projeler/Repos/test.csv"
         csv=writer(file)
         if page2==-1:
             csv.writerow(["yakit","vites","model","km","fiyat"]) 
@@ -47,7 +47,7 @@ while page<sayfa+1:
     response=requests.get(f"{url}"+f"?siralama=fiyata-gore&sayfa={page}")
     soup=BeautifulSoup(response.text,"html.parser")
     ilanlar=soup.find_all(class_="card-list-item")  
-    with open ("C:/Users/theod/OneDrive/Masaüstü/python/31-Projeler/son testler/final.csv","a",newline='',encoding="utf-8")as file:
+    with open ("***BURAYA OLUŞTURULACAK OLAN CSV DOSYA YOLUNU GİRİNİZ YUKARDAKİ İLE AYNI DOSYA OLMALI***","a",newline='',encoding="utf-8")as file:
         csv=writer(file)
                 
         for ilan in ilanlar:  # Veri Düzenlemesi 
@@ -137,7 +137,7 @@ while page<sayfa+1:
                             
             csv.writerow([yakit,vites,model,km,fiyat])
 
-dosya = open("C:/Users/theod/OneDrive/Masaüstü/python/31-Projeler/son testler/final.csv","r",encoding="utf-8")
+dosya = open("*** CSV DOSYA YOLU****","r",encoding="utf-8") 
 veri_sayisi = 0
 for satir in dosya:
     veri_sayisi+=1
@@ -147,7 +147,7 @@ dosya.close()
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-veriler=pd.read_csv('C:/Users/theod/OneDrive/Masaüstü/python/31-Projeler/son testler/final.csv') 
+veriler=pd.read_csv('*** CSV DOSYA YOLU ***') 
 
 yakitlar=veriler.iloc[:,0:1].values
 yakitlar2=veriler.iloc[:,0:1].values
@@ -224,5 +224,5 @@ class Girdiler():
 inp=Girdiler()
 price=f"{rf_reg.predict([[inp.b,inp.c,inp.e,inp.x,inp.y,inp.z,inp.arac_yıl,inp.arac_km]])} ₺" 
 print(price)
-os.remove("C:/Users/theod/OneDrive/Masaüstü/python/31-Projeler/son testler/final.csv") # Verileri güncel tutmak için uygulama kapandıktan sonra veriler silinecektir.
-# veriler silinsin istemiyorsanız 221. satırı kaldırın !
+os.remove("*** CSV DOSYA YOLU ***") # Verileri güncel tutmak için uygulama kapandıktan sonra veriler silinecektir.
+# veriler silinsin istemiyorsanız 227. satırı kaldırın !
