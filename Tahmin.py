@@ -39,8 +39,8 @@ url="https://www.araba.com/otomobil" # Verilerin alındığı 2. Site
 page=-1
 response=requests.get(f"{url}"+f"?siralama=fiyata-gore&sayfa={page}")
 soup=BeautifulSoup(response.text,"html.parser")
-sayfa=soup.find_all(class_="btn item")[6].text # sayfa sayısı 
-sayfa=int(sayfa)
+# sayfa=soup.find_all(class_="btn item")[6].text # sayfa sayısı
+sayfa=19
 print("Veriler toplanıyor lütfen bekleyiniz..\n")
 while page<sayfa+1: 
     page += 1 
