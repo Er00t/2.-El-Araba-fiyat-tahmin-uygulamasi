@@ -1,6 +1,7 @@
 # 2.-El-Araba-fiyat-tahmin-uygulamasi
 Aracın Markasından bağımsız olarak sitelerden çekilen verilerle aracınızın fiyatını yaklaşık olarak size hesaplayan uygulama
-**Kullanıcı arayüzü eklenmiştir**
+
+**Kullanıcı arayüzü eklenmiştir**:computer:
 
 Kodu çalıştırmadan önce indirilmesi gereken kütüphaneler:
 - `pip install tkinter`
@@ -18,9 +19,9 @@ Kodu çalıştırmadan önce kodda size veriler CSV doya yollarını girmeniz ge
 
 Size yardımcı olucak yorum satırları eklenmiştir yorum satırlarına göz atın
 
-Sorunuz olursa bana alperentrnu@gmail.com adresinden her zaman ulaşabilirsiniz.
+:question:Sorunuz olursa bana: alperentrnu@gmail.com adresinden her zaman ulaşabilirsiniz.
 
 Console application that informs you about the approximate price of your vehicle from online data, without calculating the brand value of the vehicle.
 
-
+![image](https://github.com/Er00t/2.-El-Araba-fiyat-tahmin-uygulamasi/blob/main/Aray%C3%BCz.png)
 
