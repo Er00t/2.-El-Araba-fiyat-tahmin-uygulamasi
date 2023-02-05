@@ -313,8 +313,8 @@ def Secim():
             z=0.0
         elif vites_getir.get()=="Yarı Otomatik Vites":
             x=0.0
-            y=0.0  
-            z=1.0  
+            y=1.0  
+            z=0.0  
         else:
             pass
     inpv=Vites()
